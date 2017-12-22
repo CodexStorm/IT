@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="com.adeel:easyFTP-1.0">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/easyFTP-1.0.aar/d227f6a57d16110493372727743b6ed4/jars/libs/commons-net-3.3.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/easyFTP-1.0.aar/d227f6a57d16110493372727743b6ed4/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/easyFTP-1.0.aar/d227f6a57d16110493372727743b6ed4/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.adeel/easyFTP/1.0/cc07169b5c7e9d3197a71834796352ac2c911fee/easyFTP-1.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

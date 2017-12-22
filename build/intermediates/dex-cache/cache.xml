@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="D:\project\try\android-Camera2Video\Application\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="D:\project\try\android-Camera2Video\Application\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_2c5e1b434c756104cc44357fb0d453d2d4c0b436\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\manoj\.android\build-cache\e73d31d8aa3eac75aece5912f53b752fad2b23ed\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="b4d6fbbb48b42dd03fd9c5a09b3b7a53266df6ed">
+        <dex dex="D:\project\try\android-Camera2Video\Application\build\intermediates\pre-dexed\debug\classes_47808a430d7fb71b0d7535080f7c60ae6202ca21.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\manoj\.android\build-cache\4037fc31a69995e37e0366ec97145bf902286eed\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="6f4138a4e065826cb044d49faea4cfd7191773d1">
+        <dex dex="D:\project\try\android-Camera2Video\Application\build\intermediates\pre-dexed\debug\classes_732abf8f982af0d653f6d0b61d155604504dac01.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\manoj\.android\build-cache\b76d369b706f85dc6077f87a65733c87e5fd54a4\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="D:\project\try\android-Camera2Video\Application\build\intermediates\pre-dexed\debug\classes_6f2af59ee42a5858acde83be9864320e9bde68b3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\manoj\.android\build-cache\aa207fa41b9ba15b04a3bc428822d052afeb2018\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="7efef32744ca4a436492d5cf28c08698cc2af256">
+        <dex dex="D:\project\try\android-Camera2Video\Application\build\intermediates\pre-dexed\debug\classes_4afe35b4ac0eba6bfdaee8a6f6c7b71e9ba5916c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\manoj\.android\build-cache\95c3049713857137ae1756d1338f9fc2247da0ea\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="b62fdc4cfef174c1e456014195c83fa7de7dc041">
+        <dex dex="D:\project\try\android-Camera2Video\Application\build\intermediates\pre-dexed\debug\classes_f25639f818a3c4525ceb783984d05a4c1ec4768e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\manoj\.android\build-cache\e2df1647b5400477285bb5da35d249a981da333f\output\jars\libs\commons-net-3.3.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="cd0d5510908225f76c5fe5a3f1df4fa44866f81e">
+        <dex dex="D:\project\try\android-Camera2Video\Application\build\intermediates\pre-dexed\debug\commons-net-3.3_375b4cecdac7dae58fffef735b1b3e5231a24552.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\manoj\.android\build-cache\3c50f768397aaf3f15eaed3016fe7a0f9cda76d8\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="2442771a5590dd4eb4bce00c2e9dca9e22e4c963">
+        <dex dex="D:\project\try\android-Camera2Video\Application\build\intermediates\pre-dexed\debug\classes_4bd6bcfc0bc0a0e1f0249fd409ec5776af9a00a6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\manoj\.android\build-cache\0285557060dd9a0ec81440471b079dc840f15ee1\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="233f60a165ae622c8b36731502ebbda0f65e1930">
+        <dex dex="D:\project\try\android-Camera2Video\Application\build\intermediates\pre-dexed\debug\classes_deeecbe2bf75391adee16a4ca8c6e51f11af9d02.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\manoj\.gradle\caches\modules-2\files-2.1\com.android.support\support-annotations\26.1.0\814258103cf26a15fcc26ecce35f5b7d24b73f8\support-annotations-26.1.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="0814258103cf26a15fcc26ecce35f5b7d24b73f8">
+        <dex dex="D:\project\try\android-Camera2Video\Application\build\intermediates\pre-dexed\debug\support-annotations-26.1.0_907773aadfc8ae248819e677a47b778e7970d5a0.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\manoj\.android\build-cache\e15ef13917c97b61f4280e0dae65a79fe17b3d83\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="80d9ff49e99ff481062ea190b43e8d6bdffd4ddc">
+        <dex dex="D:\project\try\android-Camera2Video\Application\build\intermediates\pre-dexed\debug\classes_009aba388a7ee971e5c4f98d13133728e57e40f6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\manoj\.gradle\caches\modules-2\files-2.1\android.arch.lifecycle\common\1.0.0\e414a4cb28434e25c4f6aa71426eb20cf4874ae9\common-1.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="e414a4cb28434e25c4f6aa71426eb20cf4874ae9">
+        <dex dex="D:\project\try\android-Camera2Video\Application\build\intermediates\pre-dexed\debug\common-1.0.0_00d912a50a1ce9d6bd5b42327444976ce82f4f93.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\manoj\.android\build-cache\968f1e257e1e2f42643e3f1101235e28394dd76e\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="f428e2fbc9ed0b297e3a3f420e51e6982f66822d">
+        <dex dex="D:\project\try\android-Camera2Video\Application\build\intermediates\pre-dexed\debug\classes_fc592f4868010bd4deb31392618c74ee4e0907e7.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\manoj\.android\build-cache\19605ca032e74d5dc66070336d38d6c63d0a3781\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="508f50705b4fde51a16259f29c854201a3044516">
+        <dex dex="D:\project\try\android-Camera2Video\Application\build\intermediates\pre-dexed\debug\classes_7213e1cd9ab3c32b553677af0631e481d8467492.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\manoj\.gradle\caches\modules-2\files-2.1\android.arch.core\common\1.0.0\a2d487452376193fc8c103dd2b9bd5f2b1b44563\common-1.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="a2d487452376193fc8c103dd2b9bd5f2b1b44563">
+        <dex dex="D:\project\try\android-Camera2Video\Application\build\intermediates\pre-dexed\debug\common-1.0.0_6a13d0e43cd2d29bd6be3b23e4ec56f0cacec730.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\manoj\.android\build-cache\7b55321bd9d0f57114eccf0d91ecc795afdb5db9\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="40392f30a601db5675cdf18192aab013d6fee6ec">
+        <dex dex="D:\project\try\android-Camera2Video\Application\build\intermediates\pre-dexed\debug\classes_2304ff48dc317c7f52af1040e413dbb6e838e0c0.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\manoj\.android\build-cache\95606473b84e48213eacc3567270cf20d6feb759\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="f97cf85b0fe70d37a705111dafa6b1b418ea1650">
+        <dex dex="D:\project\try\android-Camera2Video\Application\build\intermediates\pre-dexed\debug\classes_4e892c52be3a88e3aa39aa04bcb6f6682842b6e2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\manoj\.android\build-cache\e2df1647b5400477285bb5da35d249a981da333f\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="ce4a7eefce47e33fa418511926671fc5997b9fa0">
+        <dex dex="D:\project\try\android-Camera2Video\Application\build\intermediates\pre-dexed\debug\classes_1e892c192f81f5c8a635ac740aeb53cf8f75ad49.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\project\try\android-Camera2Video\Application\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="a8b0e8cf18e4e11bfdbd39d2c4ae98752ecaba60">
+        <dex dex="D:\project\try\android-Camera2Video\Application\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_dbe797bcc4226116f48d32ecde73a28192d843cf\classes.dex" />
+    </item>
+
+</items>

@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "D:\\project\\try\\android-Camera2Video\\Application\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_template_icon_group.xml",
+        "source": "C:\\Users\\manoj\\.android\\build-cache\\3c50f768397aaf3f15eaed3016fe7a0f9cda76d8\\output\\res\\layout-v21\\notification_template_icon_group.xml"
+    },
+    {
+        "merged": "D:\\project\\try\\android-Camera2Video\\Application\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_template_custom_big.xml",
+        "source": "C:\\Users\\manoj\\.android\\build-cache\\3c50f768397aaf3f15eaed3016fe7a0f9cda76d8\\output\\res\\layout-v21\\notification_template_custom_big.xml"
+    },
+    {
+        "merged": "D:\\project\\try\\android-Camera2Video\\Application\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_action.xml",
+        "source": "C:\\Users\\manoj\\.android\\build-cache\\3c50f768397aaf3f15eaed3016fe7a0f9cda76d8\\output\\res\\layout-v21\\notification_action.xml"
+    },
+    {
+        "merged": "D:\\project\\try\\android-Camera2Video\\Application\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_action_tombstone.xml",
+        "source": "C:\\Users\\manoj\\.android\\build-cache\\3c50f768397aaf3f15eaed3016fe7a0f9cda76d8\\output\\res\\layout-v21\\notification_action_tombstone.xml"
+    }
+]

@@ -24,6 +24,7 @@ import android.app.DialogFragment;
 import android.app.Fragment;
 import android.content.Context;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.content.res.Configuration;
 import android.graphics.Matrix;
@@ -37,6 +38,7 @@ import android.hardware.camera2.CameraManager;
 import android.hardware.camera2.CameraMetadata;
 import android.hardware.camera2.CaptureRequest;
 import android.hardware.camera2.params.StreamConfigurationMap;
+import android.media.MediaCodec;
 import android.media.MediaRecorder;
 import android.os.Bundle;
 import android.os.Handler;
@@ -53,6 +55,7 @@ import android.view.TextureView;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.Toast;
 
 import java.io.File;
@@ -71,10 +74,11 @@ public class Camera2VideoFragment extends Fragment
     private static final int SENSOR_ORIENTATION_INVERSE_DEGREES = 270;
     private static final SparseIntArray DEFAULT_ORIENTATIONS = new SparseIntArray();
     private static final SparseIntArray INVERSE_ORIENTATIONS = new SparseIntArray();
-
+    private EditText Name;
     private static final String TAG = "Camera2VideoFragment";
     private static final int REQUEST_VIDEO_PERMISSIONS = 1;
     private static final String FRAGMENT_DIALOG = "dialog";
+    private String Fname;
 
     private static final String[] VIDEO_PERMISSIONS = {
             Manifest.permission.CAMERA,
@@ -284,6 +288,7 @@ public class Camera2VideoFragment extends Fragment
         mButtonVideo = (Button) view.findViewById(R.id.video);
         mButtonVideo.setOnClickListener(this);
         view.findViewById(R.id.info).setOnClickListener(this);
+        Name = (EditText)view.findViewById(R.id.name);
     }
 
     @Override
@@ -316,13 +321,17 @@ public class Camera2VideoFragment extends Fragment
                 break;
             }
             case R.id.info: {
-                Activity activity = getActivity();
+                Context context = view.getContext();
+                Context c = view.getContext();
+                Intent i = new Intent(c, VideoList.class);
+                startActivity(i);
+                /*Activity activity = getActivity();
                 if (null != activity) {
                     new AlertDialog.Builder(activity)
                             .setMessage(R.string.intro_message)
                             .setPositiveButton(android.R.string.ok, null)
                             .show();
-                }
+                }*/
                 break;
             }
         }
@@ -586,7 +595,7 @@ public class Camera2VideoFragment extends Fragment
             mNextVideoAbsolutePath = getVideoFilePath(getActivity());
         }
         mMediaRecorder.setOutputFile(mNextVideoAbsolutePath);
-        mMediaRecorder.setVideoEncodingBitRate(10000000);
+        mMediaRecorder.setVideoEncodingBitRate(690000);
         mMediaRecorder.setVideoFrameRate(30);
         mMediaRecorder.setVideoSize(mVideoSize.getWidth(), mVideoSize.getHeight());
         mMediaRecorder.setVideoEncoder(MediaRecorder.VideoEncoder.H264);
@@ -604,9 +613,13 @@ public class Camera2VideoFragment extends Fragment
     }
 
     private String getVideoFilePath(Context context) {
+        Fname = Name.getText().toString();
+        if (Fname.isEmpty()) {
+            Toast.makeText(getActivity(), "Please enter the File name", Toast.LENGTH_SHORT);
+        }
         final File dir = context.getExternalFilesDir(null);
         return (dir == null ? "" : (dir.getAbsolutePath() + "/"))
-                + System.currentTimeMillis() + ".mp4";
+                + Fname + ".mp4";
     }
 
     private void startRecordingVideo() {
