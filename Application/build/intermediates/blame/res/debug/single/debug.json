@@ -364,6 +364,10 @@
         "source": "C:\\Users\\manoj\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\6427ec1f56bf4e1215f1d8d4d391a296\\res\\drawable-xxhdpi-v4\\abc_list_selector_disabled_holo_dark.9.png"
     },
     {
+        "merged": "D:\\project\\try\\android-Camera2Video\\Application\\build\\intermediates\\res\\merged\\debug\\layout_custom_dialogue.xml.flat",
+        "source": "D:\\project\\try\\android-Camera2Video\\Application\\src\\main\\res\\layout\\custom_dialogue.xml"
+    },
+    {
         "merged": "D:\\project\\try\\android-Camera2Video\\Application\\build\\intermediates\\res\\merged\\debug\\color_abc_hint_foreground_material_dark.xml.flat",
         "source": "C:\\Users\\manoj\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\6427ec1f56bf4e1215f1d8d4d391a296\\res\\color\\abc_hint_foreground_material_dark.xml"
     },

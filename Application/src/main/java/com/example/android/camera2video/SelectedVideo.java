@@ -1,8 +1,10 @@
 package com.example.android.camera2video;
 
 import android.app.Activity;
+import android.app.AlertDialog;
 import android.app.ProgressDialog;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.res.Configuration;
 import android.media.AudioManager;
@@ -11,8 +13,10 @@ import android.os.AsyncTask;
 import android.os.Bundle;
 import android.util.DisplayMetrics;
 import android.util.Log;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.MediaController;
 import android.widget.SeekBar;
 import android.widget.Toast;
@@ -113,7 +117,7 @@ public class SelectedVideo extends Activity {
         upLoad.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                up(view);
+                showdialogue(view);
             }
         });
     }
@@ -122,9 +126,37 @@ public class SelectedVideo extends Activity {
         super.onConfigurationChanged(newConfig);
     }
 
+    public void showdialogue(final View v)
+    {
+        AlertDialog.Builder dialogBuilder = new AlertDialog.Builder(SelectedVideo.this);
+        /*final Context context = dialogBuilder.getContext();
+        final LayoutInflater inflater = LayoutInflater.from(context);
+        final View view = inflater.inflate(R.layout.custom_dialogue, null, false);*/
+        LayoutInflater inflater = SelectedVideo.this.getLayoutInflater();
+        final View dialogView = inflater.inflate(R.layout.custom_dialogue, null);
+        dialogBuilder.setView(dialogView);
+
+        final EditText edt = (EditText) dialogView.findViewById(R.id.edit1);
+
+        dialogBuilder.setMessage("Enter Ip Address :");
+        dialogBuilder.setPositiveButton("Done", new DialogInterface.OnClickListener() {
+            public void onClick(DialogInterface dialog, int whichButton) {
+                Constants.IP =(String)edt.getText().toString();
+                up(v);
+            }
+        });
+        dialogBuilder.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+            public void onClick(DialogInterface dialog, int whichButton) {
+                //pass
+            }
+        });
+        AlertDialog b = dialogBuilder.create();
+        b.show();
+    }
+
     public  void up(View v){
         final File dir = SelectedVideo.this.getExternalFilesDir(null);
-        String address="139.59.24.226",u="",p="",directory=dir.getAbsolutePath();
+        String address=Constants.IP,u="",p="",directory=dir.getAbsolutePath();
         uploadTask async=new uploadTask();
         async.execute(address,u,p,directory);//Passing arguments to AsyncThread
     }

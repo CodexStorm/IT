@@ -79,7 +79,7 @@ public class Camera2VideoFragment extends Fragment
     private static final int REQUEST_VIDEO_PERMISSIONS = 1;
     private static final String FRAGMENT_DIALOG = "dialog";
     private String Fname;
-
+    private String Vname;
     private static final String[] VIDEO_PERMISSIONS = {
             Manifest.permission.CAMERA,
             Manifest.permission.RECORD_AUDIO,
@@ -288,7 +288,6 @@ public class Camera2VideoFragment extends Fragment
         mButtonVideo = (Button) view.findViewById(R.id.video);
         mButtonVideo.setOnClickListener(this);
         view.findViewById(R.id.info).setOnClickListener(this);
-        Name = (EditText)view.findViewById(R.id.name);
     }
 
     @Override
@@ -316,7 +315,7 @@ public class Camera2VideoFragment extends Fragment
                 if (mIsRecordingVideo) {
                     stopRecordingVideo();
                 } else {
-                    startRecordingVideo();
+                    showDialogue();
                 }
                 break;
             }
@@ -613,13 +612,10 @@ public class Camera2VideoFragment extends Fragment
     }
 
     private String getVideoFilePath(Context context) {
-        Fname = Name.getText().toString();
-        if (Fname.isEmpty()) {
-            Toast.makeText(getActivity(), "Please enter the File name", Toast.LENGTH_SHORT);
-        }
+
         final File dir = context.getExternalFilesDir(null);
         return (dir == null ? "" : (dir.getAbsolutePath() + "/"))
-                + Fname + ".mp4";
+                + Vname + ".mp4";
     }
 
     private void startRecordingVideo() {
@@ -694,16 +690,35 @@ public class Camera2VideoFragment extends Fragment
         // Stop recording
         mMediaRecorder.stop();
         mMediaRecorder.reset();
-
-        Activity activity = getActivity();
-        if (null != activity) {
-            Toast.makeText(activity, "Video saved: " + mNextVideoAbsolutePath,
-                    Toast.LENGTH_SHORT).show();
-            Log.d(TAG, "Video saved: " + mNextVideoAbsolutePath);
-        }
-        mNextVideoAbsolutePath = null;
-        startPreview();
     }
+
+    private void showDialogue() {
+        AlertDialog.Builder dialogBuilder = new AlertDialog.Builder(getActivity());
+        /*final Context context = dialogBuilder.getContext();
+        final LayoutInflater inflater = LayoutInflater.from(context);
+        final View view = inflater.inflate(R.layout.custom_dialogue, null, false);*/
+        LayoutInflater inflater = getActivity().getLayoutInflater();
+        final View dialogView = inflater.inflate(R.layout.custom_dialogue, null);
+        dialogBuilder.setView(dialogView);
+
+        final EditText edt = (EditText) dialogView.findViewById(R.id.edit1);
+
+        dialogBuilder.setMessage("Enter Video Name :");
+        dialogBuilder.setPositiveButton("Done", new DialogInterface.OnClickListener() {
+            public void onClick(DialogInterface dialog, int whichButton) {
+                Vname =(String)edt.getText().toString();
+                startRecordingVideo();
+            }
+        });
+        dialogBuilder.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+            public void onClick(DialogInterface dialog, int whichButton) {
+                //pass
+            }
+        });
+        AlertDialog b = dialogBuilder.create();
+        b.show();
+    }
+
 
     /**
      * Compares two {@code Size}s based on their areas.
